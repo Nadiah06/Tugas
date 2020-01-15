@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".maps.MapsActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/maps"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigasi"
+        android:text="Navigasi"
+        android:background="@android:color/holo_purple"
+        android:layout_below="@+id/maps"
+        android:layout_marginTop="-25dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navigasi"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul Wisata"
+            android:id="@+id/judulWisata"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deskripsiTxt"/>
+    </LinearLayout>
+</RelativeLayout>
